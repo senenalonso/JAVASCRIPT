@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+      .colorido {
+        background-color: blue;
+      }
+      .oscuro {
+        background-color: darkblue;
+      }
+      .claro {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>I like pizza.</p>
+    <h1 id="tittle">jQuery Exercises</h1>
+    <button class="js-tacos">Tacos</button>
+    <button data-action="do stuff">Do stuff</button>
+    <button data-action="Play hard">Play hard</button>
+    <hr>
+    <div id="container"></div>
+
+    <div class="container2"><input type="radio"></div>
+
+    <script type="text/javascript">
+      console.log($('p')[0]);
+      console.log($('#tittle')[0]);
+      console.log($('.js-tacos')[0]);
+      console.log($('[data-action]')[0]);
+      console.log($('[data-action*=hard]')[0]);
+
+      $('#container').append('<p>DENTRO AL FINAL</p>');
+      $('#container').prepend('<p>DENTRO LO PRIMERO</p>');
+      $('#container').before('<p>ANTES</p>');
+      $('#container').after('<p>DESPUES</p>');
+
+      $('#container').addClass('colorido');
+
+      $('input').prop('type', 'checkbox');
+      $('.container2').prop('class', 'oscuro');
+
+    </script>
+  </body>
+</html>

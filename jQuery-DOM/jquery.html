@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+      .colorido {
+        background-color: blue;
+      }
+      .oscuro {
+        background-color: darkblue;
+      }
+      .claro {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hola mundo!!</p>
+    <button class="btn btn-primary empanadas">Empanadas</button>
+    <button id="pizzas" class="btn btn-success">Pizzas</button>
+    <br>
+    <a href="http://www.google.com" data-pepito="talcosa">Google</a>
+    <br>
+    <a href="http://www.duckduckgo.com">Duck Duck Go</a>
+
+    <ul class="list">
+      <li>Zero</li>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+
+      
+    <div class="container" style="margin-top: 50px;">
+      <button class="btn btn-primary hello-button">Do Something</button>
+    </div> 
+    
+    <div id="container2"></div>
+
+    <input type="text" id="info" size=100>
+    <p>Este texto como valor del campo de texto</p>
+
+    <script type="text/javascript">
+
+    $('#info').prop('value', $('p')[1].innerHTML);
+
+      $('.hello-button').on('click', function () {
+        alert('hello world')
+      });
+
+      $('.list li:odd').addClass('colorido');
+      $('.list li:first-child').addClass('oscuro');
+      $('.list li:nth-child(3)').addClass('claro');
+
+      var precio = '<p>A tan solo $299,99</p>'
+      $('#container2').append(precio);
+    </script>
+  </body>
+</html>

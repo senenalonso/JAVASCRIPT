@@ -1,0 +1,10 @@
+{
+  "Tweets": [
+    {
+      "texto" : "Hola"
+    },
+    {
+      "texto"  : "Mundo"
+    }
+  ]
+}
