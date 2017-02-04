@@ -3,11 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JS</title>
-	<!--<script type="text/javascript" src="ajax.js"></script>-->
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="callBackHell.js"></script>
+	<script type="text/javascript" src="ajax2.js"></script>
 </head>
 <body>
+	<div class="js-character-list"></div>
+
+	<form method="post" action="https://ironhack-characters.herokuapp.com/characters">
+		<input type="text" name="name" placeholder="Name">
+		<input type="text" name="occupation" placeholder="Occupation">
+		<input type="text" name="weapon" placeholder="Weapon">
+		<input type="text" name="debt" placeholder="Debt">
+
+		<button type="submit">Save</button>
+	</form>
 	
+
+	<div id="map" style="width:500px;height: 400px"></div>
+
+
 </body>
 </html>
