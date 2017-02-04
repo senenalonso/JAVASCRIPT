@@ -12,6 +12,7 @@
   background-color: #ccc;
   position: relative;
   font-size: 12px;
+  margin: auto;
 }
 
 .btn-play {
@@ -136,6 +137,7 @@ audio {
   width: 300px;
   height: 300px;
 }
+
 
 progress {
   width: 100%;

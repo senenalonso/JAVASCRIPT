@@ -191,10 +191,14 @@ function getInfoArtist (id) {
 function setInfoArtist (artist) {
 	  $('.modal-header > h2').html(`${artist.name}`);
     $('.modal-body').html(`
-    	<img class="poster" src="${artist.images[0].url}" alt="${artist.name}">
+    	<div class="center">
+    		<img class="poster center" src="${artist.images[0].url}" alt="${artist.name}">
+    	</div>
     	<hr>
-    	<p><b>Genres:</b> ${artist.genres}</p>
-    	<p><b>Followers:</b> ${artist.followers.total}</p>
-    	<p><b>Popularity:</b> ${artist.popularity}</p>
+    	<div class="infoArtist">
+	    	<p><b>Genres:</b> ${artist.genres}</p>
+	    	<p><b>Followers:</b> ${artist.followers.total}</p>
+	    	<p><b>Popularity:</b> ${artist.popularity}</p>
+    	</div>
     	`); 
 }
