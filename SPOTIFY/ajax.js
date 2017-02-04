@@ -140,6 +140,8 @@ function showTrack(response) {
 	$('.clock').html(`(0.${TIME})`);
 	$('.cover > img').attr("src",track.album.images[0].url);
 	$('.js-player').attr("src",track.preview_url);
+	
+	$('#carousel').elastislide();
 };
 
 function playOrPauseTrack(){
