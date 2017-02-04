@@ -192,8 +192,9 @@ function setInfoArtist (artist) {
 	  $('.modal-header > h2').html(`${artist.name}`);
     $('.modal-body').html(`
     	<img class="poster" src="${artist.images[0].url}" alt="${artist.name}">
-    	<p>Genres: ${artist.genres}</p>
-    	<p>Followers: ${artist.followers.total}</p>
-    	<p>Popularity: ${artist.popularity}</p>
+    	<hr>
+    	<p><b>Genres:</b> ${artist.genres}</p>
+    	<p><b>Followers:</b> ${artist.followers.total}</p>
+    	<p><b>Popularity:</b> ${artist.popularity}</p>
     	`); 
 }
