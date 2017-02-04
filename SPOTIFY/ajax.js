@@ -70,6 +70,7 @@ function showArtist(response) {
 
 function showAlbums(response) {
 	$('.js-album-list').empty();
+	$('.js-track-list').empty();
 	var albums = response.items;
 
 	var html = `
